@@ -370,9 +370,12 @@
     height: 80%;
     border-radius: 50%;
 }
-@media screen an (max-width: 767px){
+@media screen and (max-width: 767px){
     body{
         /* overflow: hidden; */
+    }
+    .header_banner{
+        background-color: salmon;
     }
     .tienda{
         flex-direction: column;
