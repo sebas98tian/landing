@@ -1,0 +1,32 @@
+<svg width="100" height="20" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definición del símbolo de estrella -->
+  <defs>
+    <symbol id="star" viewBox="0 0 24 24">
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+    </symbol>
+  </defs>
+  
+  <!-- Estrellas llenas -->
+  <g fill="yellow" stroke="none">
+    <use href="#star" x="0" y="0" width="20" height="20"/>
+    <use href="#star" x="20" y="0" width="20" height="20"/>
+    <use href="#star" x="40" y="0" width="20" height="20"/>
+    <use href="#star" x="60" y="0" width="20" height="20"/>
+  </g>
+  
+  <!-- Media estrella -->
+  <g fill="yellow" stroke="none">
+    <defs>
+      <clipPath id="clip-half">
+        <rect x="0" y="0" width="10" height="20"/>
+      </clipPath>
+    </defs>
+    <use href="#star" x="80" y="0" width="20" height="20" clip-path="url(#clip-half)" />
+  </g>
+  
+  <!-- Estrellas vacías -->
+  <g fill="none" stroke="none">
+    <use href="#star" x="100" y="0" width="20" height="20"/>
+    <use href="#star" x="120" y="0" width="20" height="20"/>
+  </g>
+</svg>

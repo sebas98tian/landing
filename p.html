@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadroUno{
+            width: 40vw;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .itemCuadro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border: solid 1px black;
+        }
+        .imgCuadroUno{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+        }
+        .itemCuadro img{
+            width: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadroUno">
+        <div class="itemCuadro">
+            <div class="imgCuadroUno"><img src="images/envioGratis.png" alt=""></div>
+            <div class="textCuadroUno">
+                <h3>Envío Gratis</h3>
+                <p>Tiempo estimado de entrega 2-5 dias hábiles.</p>
+            </div>
+        </div>
+        <div class="itemCuadro">
+            <div class="imgCuadroUno"><img src="images/9413653.png" alt=""></div>
+            <div class="textCuadroUno">
+                <h3>Compra segura desde tu casa</h3>
+                <p>Puedes pagar al recibir el producto.</p>
+            </div>
+        </div>
+        <div class="itemCuadro">
+            <div class="imgCuadroUno"><img src="images/650866.png" alt=""></div>
+            <div class="textCuadroUno">
+                <h3>Devolución de tu Dinero</h3>
+                <p>Compra con tranquilidad.</p>
+            </div>
+        </div>
+        <div class="itemCuadro">
+            <div class="imgCuadroUno"><img src="images/1156677.png" alt=""></div>
+            <div class="textCuadroUno">
+                <h3>Te Grantizamos tu producto</h3>
+                <p>Si tu producto llega defectuoso, pide tu garantía.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula Responsiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .cuadroUno {
+            width: 40vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0; /* Sin espacio entre elementos */
+        }
+
+        @media (max-width: 600px) {
+            .cuadroUno {
+                width: 100vw; /* Ocupar todo el ancho de la pantalla */
+                grid-template-columns: 1fr; /* Cambiar a una columna */
+            }
+        }
+
+        .itemCuadro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: solid 1px #ddd;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 150px; /* Altura fija para uniformar todas las cajas */
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .itemCuadro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .imgCuadroUno {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .imgCuadroUno img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .textCuadroUno {
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .textCuadroUno h3 {
+            margin: 0 0 5px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .textCuadroUno p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadroUno">
+        <div class="itemCuadro">
+            <div class="imgCuadroUno">
+                <img src="images/envioGratis.png" alt="Envío Gratis">
+            </div>
+            <div class="textCuadroUno">
+                <h3>Envío Gratis</h3>
+                <p>Tiempo estimado de entrega 2-5 días hábiles.</p>
+            </div>
+        </div>
+        <div class="itemCuadro">
+            <div class="imgCuadroUno">
+                <img src="images/9413653.png" alt="Compra segura">
+            </div>
+            <div class="textCuadroUno">
+                <h3>Compra segura desde tu casa</h3>
+                <p>Puedes pagar al recibir el producto.</p>
+            </div>
+        </div>
+        <div class="itemCuadro">
+            <div class="imgCuadroUno">
+                <img src="images/650866.png" alt="Devolución">
+            </div>
+            <div class="textCuadroUno">
+                <h3>Devolución de tu Dinero</h3>
+                <p>Compra con tranquilidad.</p>
+            </div>
+        </div>
+        <div class="itemCuadro">
+            <div class="imgCuadroUno">
+                <img src="images/1156677.png" alt="Garantía">
+            </div>
+            <div class="textCuadroUno">
+                <h3>Te garantizamos tu producto</h3>
+                <p>Si tu producto llega defectuoso, pide tu garantía.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
