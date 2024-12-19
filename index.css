@@ -372,10 +372,10 @@
 }
 @media screen and (max-width: 767px){
     body{
-        /* overflow: hidden; */
+        overflow-x: hidden;
     }
     .header_banner{
-        background-color: salmon;
+        background-color: blue;
     }
     .tienda{
         flex-direction: column;
