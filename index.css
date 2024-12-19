@@ -5,6 +5,7 @@
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
     line-height: 1.5;
+    outline: 1px solid red; 
 }
 /* HEADER */
 .header_banner{
@@ -371,7 +372,7 @@
     border-radius: 50%;
 }
 @media screen and (max-width: 767px){
-    body{
+    html,body{
         overflow-x: hidden;
     }
     .header_banner{
