@@ -5,7 +5,7 @@
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
     line-height: 1.5;
-    outline: 1px solid red; 
+    /* outline: 1px solid red;  */
 }
 /* HEADER */
 .header_banner{
@@ -375,14 +375,12 @@
     html,body{
         overflow-x: hidden;
     }
-    .header_banner{
-        background-color: blue;
-    }
     .tienda{
         flex-direction: column;
     }
     .tienda_imagenes{
         position: static;
+        /* background-color: #333; */
         /* top: 0%;
         left: 0; */
         width: 100vw;
@@ -390,6 +388,43 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between; */
+        display: block;
+        height: auto;
+    }
+    .imagenes_principal{
+        height: 50vh;
+        width: 100%;
+        padding: 10px;
+    }
+    .imagenes_carrusel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carrusel_contenedor{
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: 7px;
+        padding-bottom: 10px;  
+    }
+    .a{
+        border: solid 1px black;
+        border-radius: 13px;
+    }
+    .carrusel_img{
+        height: 100%;
+        overflow: hidden;
+    }
+    .js-carrusel_img{
+        border: solid 1px black;
+        border-radius: 13px;
+    }
+    .carrusel_contenedor img{
+        width: 90%;
+        height: 100%;
     }
     .tienda_info{
         width: 100vw;
