@@ -85,7 +85,7 @@
 .carrusel_img{
     height: 100%;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: contain;
 }
 .js-carrusel_img{
     border: solid 1px black;
@@ -387,7 +387,7 @@
     .cuadroUno{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 0; /* Sin espacio entre elementos */
         margin-bottom: 25px;
         padding: 15px;
@@ -426,7 +426,7 @@
     .text_benesp{
         padding: 20px;
     }
-    .text_beneficios li{
+    .text_beneficios li,.text_especificaciones li{
         margin-bottom: 10px;
     }
     .info_title h2{
