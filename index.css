@@ -7,6 +7,9 @@
     line-height: 1.5;
     /* outline: 1px solid red;  */
 }
+.t{
+    display: none;
+}
 .mula{
     width: 100vw;
     height: 300px;
@@ -386,11 +389,8 @@
     }
     .cuadroUno{
         width: 100%;
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 0; /* Sin espacio entre elementos */
-        margin-bottom: 25px;
-        padding: 15px;
+        gap: 5px; 
     }
     .tienda{
         flex-direction: column;
@@ -441,6 +441,15 @@
     .footer{
         margin-top: -30px;
         /* background-color: red; */
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .t2{
+        display: none;
+    }
+    .t{
+        display: block;
     }
     
 }
